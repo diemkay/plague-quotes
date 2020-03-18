@@ -1,0 +1,45 @@
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6em;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+h1 {
+  color: crimson;
+}
+
+#quote-box {
+  width: 500px;
+  border: 1px solid crimson;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-quote {
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  width: 285px;
+  background-color: #006ff2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#tweet-quote {
+  text-decoration: none;
+}
