@@ -1,45 +1,113 @@
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Source+Serif+Pro:wght@700&display=swap');
 
-body {
-  display: flex;
-  flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
 }
 
 html {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6em;
+  font-family: 'Source Serif Pro', serif;
+  color: #2a2f45;
+  line-height: 1.5;
   word-wrap: break-word;
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 18px;
 }
 
-h1 {
-  color: crimson;
-}
-
-#quote-box {
-  width: 500px;
-  border: 1px solid crimson;
-  padding: 10px;
+body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
-#new-quote {
+#parent-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#parent-image {
+  align-self: flex-end;
+}
+
+/* DAS BOX */
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
   margin: 0 auto;
-  display: block;
-  font-size: 16px;
-  height: 50px;
-  width: 285px;
-  background-color: #006ff2;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
+  padding: 30px 40px 10px 40px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+/* QUOTE TEXT & AUTHOR  */
+
+#author {
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#text {
+  font-size: 28px;
+  font-family: 'IM Fell Double Pica', serif;
+  font-weight: 300;
+}
+
+/* QUOTE ACTIONS  AND BUTTONS */
+
+#quote-actions {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
 }
 
+#new-quote,
+#tweet-button {
+  margin: 10px;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  width: 150px;
+  background-color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#new-quote {
+  color: #fff;
+}
+
+/* "TWEET BUTTON */
+
+#tweet-button {
+  display: flex;
+  align-items: center;
+}
+
+#tweet-icon {
+  margin-right: 10px;
+}
+
+/* A ELEMENT INSIDE THE BUTTON (FCC NAMING CONVENTION) */
+
 #tweet-quote {
+  text-align: center;
   text-decoration: none;
 }
